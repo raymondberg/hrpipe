@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Fellowship Pipeline</title>
+</head>
+<body>
+	<p> Welcome to the Fellowship Pipeline!</p>
+	<p> This project is intended as a visualization tool for talent management. Originally created as a proof of concept for a hiring program, this output has since been generalized for open availability. </p>
+	<p>The pipeline creates a backdrop for organizations to discuss personnel quantities, annual hiring goals, and issues in retention. Employees can be tracked from their hiring into an intern population (part time worker or trial employee) into a junior role before joining the regular workforce.</p>
+	<p>This project is in semi-permanent beta.</p>
+	<a href='image.php'><img src='image.php' style="width:800px;height:400px"/></a>
+
+	<h4>Data</h4>
+	<p>The following is a sample of the XML schema that drives the visualization</p>
+	<pre> 
+&lt;xml&gt;
+&lt;fellows&gt;
+	&lt;fellow&gt;
+		&lt;name&gt;Charlie Brown&lt;/name&gt;
+		&lt;enterStatus&gt;Junior&lt;/enterStatus&gt;
+		&lt;currentStatus&gt;Permanent&lt;/currentStatus&gt;
+		&lt;years&gt;
+			&lt;year&gt;
+				&lt;fy&gt;2014&lt;/fy&gt;
+				&lt;inputStatus&gt;Junior Hired&lt;/inputStatus&gt;
+				&lt;outputStatus&gt;Junior Carried&lt;/outputStatus&gt;
+				&lt;internGraduated&gt;No&lt;/internGraduated&gt;
+			&lt;/year&gt;
+			&lt;year&gt;
+				&lt;fy&gt;2015&lt;/fy&gt;
+				&lt;inputStatus&gt;Junior Inherited&lt;/inputStatus&gt;
+				&lt;outputStatus&gt;Junior Carried&lt;/outputStatus&gt;
+				&lt;internGraduated&gt;No&lt;/internGraduated&gt;
+			&lt;/year&gt;
+			&lt;year&gt;
+				&lt;fy&gt;2016&lt;/fy&gt;
+				&lt;inputStatus&gt;Junior Inherited&lt;/inputStatus&gt;
+				&lt;outputStatus&gt;Junior Carried&lt;/outputStatus&gt;
+				&lt;internGraduated&gt;No&lt;/internGraduated&gt;
+			&lt;/year&gt;
+			&lt;year&gt;
+				&lt;fy&gt;2017&lt;/fy&gt;
+				&lt;inputStatus&gt;Junior Inherited&lt;/inputStatus&gt;
+				&lt;outputStatus&gt;Junior Graduating&lt;/outputStatus&gt;
+				&lt;internGraduated&gt;No&lt;/internGraduated&gt;
+			&lt;/year&gt;
+		&lt;/years&gt;
+	&lt;/fellow&gt;
+...
+&lt;/xml&gt;
+	</pre>
+</body>
+</html>
